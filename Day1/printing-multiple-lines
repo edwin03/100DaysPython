@@ -1,0 +1,4 @@
+#Printing multiple lines with one print function
+print("Hello world!\nHello world!\nHello world!")
+#Concatinating strings using "+"
+print("Edwin " + "Rubio")
