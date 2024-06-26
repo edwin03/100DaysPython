@@ -1,0 +1,19 @@
+#Data Types
+
+#String
+
+#This prints the first letter of Hello. This is known as Subscript.
+print("Hello"[0])
+print("Hello"[len("Hello")-1])
+
+#This is still a string
+print("123")
+
+#Contatinating, by using the + symbol
+print("Hello " + "World!")
+
+#Integer, this is basically a whole number
+print(123 + 345)
+
+#To add commas use underscores
+print(123_456_789)
