@@ -17,3 +17,27 @@ print(123 + 345)
 
 #To add commas use underscores
 print(123_456_789)
+
+#Float, this basically a number with a decimal
+print(4.14159)
+
+#Boolean, only two possible values of True or False
+True
+False
+
+#The code below will give an error becuase print function cannot concatanate strings
+#and ints together.
+num_char = len(input("What is your name?"))
+#This converts it to a string
+new_num_char = str(num_char)
+print(type(new_num_char))
+print("Your name has " + new_num_char + " Characters.")
+#This converts it to a string
+new_num_char = str(num_char)
+#This converts it to 
+a = 123
+print(type(a))
+a = str(123)
+print(type(a))
+a = float(123)
+print(type(a))
