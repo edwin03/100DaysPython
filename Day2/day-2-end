@@ -1,0 +1,15 @@
+#adding
+3 + 5
+#subtracting
+7-4
+#multiplication
+3 * 2
+#division, always retruns a float
+print(type(6 / 3))
+#exponent, this is two to the power of two
+2 ** 2
+#Mathimatical priority PEMDAS
+#Parrentheses>Exponenets>Multiplication>Division>Addition>Subtraction
+#From left to right multiplcation and deivision  this also applies to addition and subtration have the same priority
+print(3 * 3 + 3 / 3 - 3)
+# Answer for the above is 7
