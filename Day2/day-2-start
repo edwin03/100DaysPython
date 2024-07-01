@@ -41,3 +41,6 @@ a = str(123)
 print(type(a))
 a = float(123)
 print(type(a))
+
+#Casting to int just chops off the decimal value
+print(8/3)

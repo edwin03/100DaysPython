@@ -13,3 +13,24 @@ print(type(6 / 3))
 #From left to right multiplcation and deivision  this also applies to addition and subtration have the same priority
 print(3 * 3 + 3 / 3 - 3)
 # Answer for the above is 7
+
+#Casting to int just chops off the decimal value
+print(int(8/3))
+
+#To round up
+print(round(8/3))
+
+#To round up two decimal places
+print(round(8/3, 2))
+
+#Division floor
+print(8//3)
+
+#Short abbriviations for mathimatical operators
+score = 0
+score -= 1
+score += 1
+score /= 1
+
+#F string to add a variable into a string
+print(f"Your score is {score}")
