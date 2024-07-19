@@ -5,8 +5,18 @@ extra_cheese = input()  # Do you want extra cheese? "Y" or "N"
 
 # Your code below this line 👇
 bill = 0
-if size == "S":
-    bill += 5
-else:
-    print("ok")
-print("Your final bill is:{} git ")
+if size.lower() == "s":
+    bill += 15
+elif size.lower() == "m":
+    bill += 20
+elif size.lower() == "l":
+    bill += 25
+if add_pepperoni.lower() == "y":
+    if size.lower == "s":
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese.lower == "y":
+    bill += 1
+
+print (f"Your final bill is: ${bill} ")
