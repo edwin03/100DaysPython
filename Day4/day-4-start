@@ -7,3 +7,6 @@ print(c)
 #this is for floating numbers
 random_float = random.random()
 print(random_float)
+
+#now to for example you want float between 0 - 5
+random_float * 5
