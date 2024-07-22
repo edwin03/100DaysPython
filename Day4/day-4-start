@@ -1,0 +1,9 @@
+import random
+
+#this is for whole numbers
+c = random.randint(1, 100)
+print(c)
+
+#this is for floating numbers
+random_float = random.random()
+print(random_float)

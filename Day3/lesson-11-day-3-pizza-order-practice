@@ -9,7 +9,7 @@ if size.lower() == "s":
     bill += 15
 elif size.lower() == "m":
     bill += 20
-elif size.lower() == "l":
+else:
     bill += 25
 if add_pepperoni.lower() == "y":
     if size.lower == "s":
