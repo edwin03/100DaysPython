@@ -1,12 +1,21 @@
-import random
+# import random
 
-#this is for whole numbers
-c = random.randint(1, 100)
-print(c)
+# #this is for whole numbers
+# c = random.randint(1, 100)
+# print(c)
 
-#this is for floating numbers
-random_float = random.random()
-print(random_float)
+# #this is for floating numbers
+# random_float = random.random()
+# print(random_float)
 
-#now to for example you want float between 0 - 5
-random_float * 5
+# #now to for example you want float between 0 - 5
+# random_float * 5
+
+states_of_america = ["Delaware", "Pynnsylvania"]
+print(states_of_america[0])#prints the first state in the list
+print(states_of_america[-1])#prints the end state in the list
+states_of_america[1] = "Pencilvania"
+print(states_of_america)
+states_of_america.append("New Jersey") # this adds one item to the end of the list.
+states_of_america.extend(["Edwinland", "Tesla"])# this add multiple items to the end of the list
+print(states_of_america)
