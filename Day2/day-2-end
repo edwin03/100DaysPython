@@ -4,15 +4,20 @@
 7-4
 #multiplication
 3 * 2
-#division, always retruns a float
+#division, always retruns a float. This is known as implicit division
 print(type(6 / 3))
+#If you dont want implicit division use the following. This chops off after the decimal:
+print(type(6 // 3))
 #exponent, this is two to the power of two
 2 ** 2
 #Mathimatical priority PEMDAS
-#Parrentheses>Exponenets>Multiplication>Division>Addition>Subtraction
+#Parrentheses>Exponenets>Multiplication/Division>Addition/Subtraction
 #From left to right multiplcation and deivision  this also applies to addition and subtration have the same priority
 print(3 * 3 + 3 / 3 - 3)
 # Answer for the above is 7
+
+#Make this equal 3
+print(3 * (3 + 3) / 3 - 3)
 
 #Casting to int just chops off the decimal value
 print(int(8/3))

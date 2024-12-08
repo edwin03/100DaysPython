@@ -6,6 +6,9 @@
 print("Hello"[0])
 print("Hello"[len("Hello")-1])
 
+#You can also print the last character by entering a negative number in the indice
+print("Hello"[-1])
+
 #This is still a string
 print("123")
 
@@ -25,22 +28,36 @@ print(4.14159)
 True
 False
 
+#Convert this into a way that the len() function works
+print(len('12345'))
+
 #The code below will give an error becuase print function cannot concatanate strings
 #and ints together.
 num_char = len(input("What is your name?"))
-#This converts it to a string
+#This converts an int to a string
 new_num_char = str(num_char)
+#This shows us the type of data type the variable is
 print(type(new_num_char))
 print("Your name has " + new_num_char + " Characters.")
 #This converts it to a string
 new_num_char = str(num_char)
-#This converts it to 
+#This converts it to diffrent data type and to show the data types 
 a = 123
 print(type(a))
 a = str(123)
 print(type(a))
 a = float(123)
 print(type(a))
+print(type(True))
+
+#These are some data type cast converter functions
+int()
+float()
+str()
+bool()
 
 #Casting to int just chops off the decimal value
 print(8/3)
+
+#New challange
+print("Number of letters in your name: " + str(len(input("Enter your last name: "))))
