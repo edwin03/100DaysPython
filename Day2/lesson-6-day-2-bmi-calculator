@@ -4,5 +4,11 @@ height = input()
 weight = input()
 # 🚨 Don't change the code above 👆
 bmi = float(weight) / (float(height) ** 2)
-# Write your code below this line 👇
+# Original
+print(bmi)
+# Write your code below this line 👇 Note: This floors the number.
 print(int(bmi))
+# We can also round it
+print(round(bmi))
+# Rounding to any specific decimal number
+print(round(bmi, 2))
