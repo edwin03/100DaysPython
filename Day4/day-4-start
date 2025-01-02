@@ -18,12 +18,12 @@ import random
 # print(random.uniform(1, 10))
 
 # Heads or Tail program
-ranum = random.randint(0, 1)
+# ranum = random.randint(0, 1)
 
-if ranum == 1:
-	print("Heads")
-else:
-	print("Tails")
+# if ranum == 1:
+# 	print("Heads")
+# else:
+# 	print("Tails")
 
 
 # states_of_america = ["Delaware", "Pynnsylvania"]
@@ -35,8 +35,8 @@ else:
 # states_of_america.extend(["Edwinland", "Tesla"])# this add multiple items to the end of the list
 # print(states_of_america)
 
-# fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
-# vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
           
-# dirty_dozen = [fruits, vegetables]
-# print(dirty_dozen)
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
