@@ -1,4 +1,4 @@
-import random
+import random, sys
 
 rock = '''
     _______
@@ -30,8 +30,19 @@ scissors = '''
 #Write your code below this line 👇
 options = [rock, paper, scissors]
 
-userSelection = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
-print(options[userSelection])
+try:
+    userSelection = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
+except Exception as e:
+    print(f"An error occurred: {e}")
+    sys.exit(1)
+
+try:
+    print(options[userSelection])
+except IndexError:
+    print(f"Invalid input: {userSelection}\nYou lose!")
+    sys.exit("Out of range input")
+
+    
 # if userSelection == 0:
 #     print(rock)
 # elif userSelection == 1:
