@@ -33,17 +33,16 @@ options = [rock, paper, scissors]
 try:
     userSelection = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
 except Exception as e:
-    print(f"An error occurred: {e}")
-    sys.exit(1)
+    # print(f"An error occurred: {e}")
+    sys.exit("You enetered a non number input. \nYou lose!")
 
 try:
     print(options[userSelection])
 except IndexError:
     print(f"Invalid input: {userSelection}\nYou lose!")
-    sys.exit("Out of range input")
-
+    sys.exit("Invalid selection!")
     
-# if userSelection == 0:
+#if userSelection == 0:
 #     print(rock)
 # elif userSelection == 1:
 #     print(paper)
@@ -54,7 +53,13 @@ except IndexError:
 
 #Computer chose:
 compSelection = random.randint(0, 2)
-# print(f"Computer chose: {}")
+print(f"Computer chose: {options[compSelection]}")
 
 #Show the hand that comptuer chose
 #Print "You lose" or "You win" or "Tie"
+if userSelection == compSelection:
+    print("Its a tie!")
+elif (userSelection == 0 and compSelection == 1) or (userSelection == 1 and compSelection == 2) or (userSelection == 2 and compSelection == 0):
+    print("You lose!")
+elif (userSelection == 0 and compSelection == 2) or (userSelection == 1 and compSelection == 0) or (userSelection == 2 and compSelection == 1):
+    print("You win!")
