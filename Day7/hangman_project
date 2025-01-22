@@ -1,0 +1,100 @@
+import random
+stages = [r'''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
+d_list = ["aardvark", "baboon", "camel"]
+lives = 6
+
+chosen_word = random.choice(d_list)
+print(chosen_word)
+
+placeholder = ""
+for char in chosen_word:
+	placeholder += "_"
+
+print(placeholder)
+
+complete = False
+display = list(placeholder)
+
+while complete != True:
+	guess = input("Guess a letter:\n").lower()
+	counter = 0
+	match = False
+
+	if guess in display:
+		print("Already entered! Try again!")
+	else:
+		for letter in chosen_word:
+			if letter == guess:
+				display[counter] = letter
+				counter += 1
+				match = True
+			else:
+				counter += 1
+
+		if match == False:
+			lives -= 1
+			print(stages[6-lives])
+		else:
+			print(stages[6-lives])
+	print("".join(display))
+	if lives == 0:
+		print("You lose!")
+		complete = True
+	elif "_" not in display:
+		print("You win!")
+		complete = True
