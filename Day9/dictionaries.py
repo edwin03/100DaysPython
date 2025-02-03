@@ -22,3 +22,33 @@ for thing in programming_dictionary:
 
 print(programming_dictionary)# editing an item in a dictionary
 programming_dictionary["Bug"] = "Assigining something else."
+
+# Nested List in a Dictionary
+captirals = {
+	"France": "Paries",
+	"Germany": "Berlin",
+}
+
+travel_log = {
+	"France": ["Paris", "Lile", "Dijon"],
+}
+
+# Printing Lile
+print(travel_log["France"][1])
+
+# 2D Nested List
+nested_list = ["a", "b", ["c", "d"]]
+
+# Printing the letter d
+print(nested_list[2][1])
+
+# Nesting a dictionary to another dictionary
+travel_log = {
+	"France": {
+		"num_times_visited": 8,
+		"cities_visted": ["Paris", "Lile", "Dijon"],
+	}
+}
+
+# How to access Dijon
+print(travel_log["France"]["cities_visted"][2])
