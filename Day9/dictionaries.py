@@ -10,7 +10,7 @@ print(programming_dictionary["Bug"])
 programming_dictionary["Loop"] = "The action of doing something over and over again."
 
 # Creating an empty/wiping dictionary
-empty_dictionary = []
+empty_dictionary = {}
 
 # editing an item in a dictionary
 programming_dictionary["Bug"] = "A moth in your computer"
