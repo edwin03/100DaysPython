@@ -1,0 +1,5 @@
+def format_name(f_name, l_name):
+	"""This formats the name in title case."""
+	return (f_name + " " + l_name).title()
+
+print(format_name("edwin", "NAUM"))
