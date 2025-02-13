@@ -19,9 +19,9 @@ def playGame(level, num):
             print(f"You got it! The answer was {num}")
             break
         elif guess > num:
-            print("Too high.")
+            print("Too high.\nGuess again.")
         else:
-            print("Too low.")
+            print("Too low.\nGuess again.")
 
 print(logo)
 print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100.")
