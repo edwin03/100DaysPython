@@ -33,7 +33,7 @@ resources = {
 
 # TODO: 1. Print report of all the coffee machine resources
 def print_report():
-    print(f"Water: {resources["water"]}ml\nMilk: {resources["milk"]}ml\nCoffee: {resources["coffee"]}g\nMoney: ${resources["money"]:.2f}")
+        print(f"Water: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g\nMoney: ${resources['money']:.2f}")
 
 # TODO: 2. Check resouces are sufficent when someone orders a dring
 def check_resources(coffee):
@@ -47,6 +47,7 @@ def check_resources(coffee):
 
 # TODO: 3. Process coins
 def process_coins():
+    '''Return the total calulated from coins inserted.'''
     print("Please insert coins.")
     quarters = input("How many quarters? ")
     dimes = input("How many dimes? ")
@@ -70,7 +71,7 @@ def check_transaction(total, coffee):
 def make_coffee(coffee):
     for ing in MENU[coffee]["ingredients"]:
         resources[ing] -= MENU[coffee]["ingredients"][ing]
-    print(f"Here is your {coffee}. Enjoy!")
+    print(f"Here is your {coffee}. Enjoy! 🍵")
 
 turnOff = False
 while turnOff == False:
