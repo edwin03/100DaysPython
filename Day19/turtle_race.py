@@ -27,7 +27,7 @@ while game_on:
     rnd_turtle = random.randint(0, 5)
     turtles[rnd_turtle].forward(10)
 
-    if turtles[rnd_turtle].xcor() == 250:
+    if turtles[rnd_turtle].xcor() == 230:
         print(f"The {turtles[rnd_turtle].color()[0]} turtle is the winner!")
         game_on = False
         if user_bet == turtles[rnd_turtle].color()[0]:
