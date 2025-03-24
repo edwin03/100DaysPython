@@ -18,3 +18,19 @@ class Snake:
         for seg_num in range(len(self.turtles) - 1, 0, -1):
             self.turtles[seg_num].goto(self.turtles[seg_num-1].pos())
         self.turtles[0].forward(MOVE_DISTANCE)
+
+    def up(self):
+        if self.turtles[0].heading() != 270:
+            self.turtles[0].seth(90)
+
+    def down(self):
+        if self.turtles[0].heading() != 90:
+            self.turtles[0].seth(270)
+    
+    def left(self):
+        if self.turtles[0].heading() != 0:
+            self.turtles[0].seth(180)
+    
+    def right(self):
+        if self.turtles[0].heading() != 180:
+            self.turtles[0].seth(0)
